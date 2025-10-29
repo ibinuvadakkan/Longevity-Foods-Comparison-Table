@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longevity Foods Comparison Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Interactive comparison table of food habits that promote longevity with scientific benefits and recommendations">
+</head>
+<body>
+    <div class="longevity-table-container">
+        <h2>Food Habits That Promote Longevity: A Quick Comparison</h2>
+        
+        <div class="table-controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search foods, benefits, or ways to add...">
+            </div>
+            <div class="sort-options">
+                <select id="sortColumn">
+                    <option value="0">Sort by Food</option>
+                    <option value="1">Sort by Benefits</option>
+                    <option value="2">Sort by How Much</option>
+                    <option value="3">Sort by Ways to Add</option>
+                </select>
+                <select id="sortDirection">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+        </div>
+        
+        <table class="longevity-table">
+            <thead>
+                <tr>
+                    <th data-column="0">Longevity Food</th>
+                    <th data-column="1">Key Benefits</th>
+                    <th data-column="2">How Much</th>
+                    <th data-column="3">Easy Ways to Add</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table rows will be populated by JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="attribution">
+            <p>Data sourced from <a href="https://healthiwellness.com/10-powerful-food-habits-that-promote-longevity-science-backed/" target="_blank">10 Powerful Food Habits That Promote Longevity (Science-Backed)</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
